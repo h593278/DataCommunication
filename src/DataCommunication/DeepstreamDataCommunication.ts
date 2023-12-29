@@ -1,5 +1,3 @@
-// /// <reference types="@deepstream/client" />
-
 import { DeepstreamClient } from "@deepstream/client";
 import { DataCommunication } from "./DataCommunication";
 
@@ -9,6 +7,7 @@ export class DeepstreamDataCommunication extends DataCommunication {
     record!: Record<string, any>;
     callbackFunction!: (json: JSON) => void;
     fieldName: string
+    
     /**
      *
     */
